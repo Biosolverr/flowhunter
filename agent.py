@@ -31,7 +31,7 @@ When answering:
 class FlowHunterAgent:
     def __init__(self):
         self.client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-        self.model = "llama3-70b-8192"
+        self.model = "llama-3.3-70b-versatile"
         self.conversation_history = []
 
     def think(self, user_message: str) -> str:
